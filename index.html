@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel to Japan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: orange;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: yellow;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {
+            float: left;
+            width: 70%;
+        }
+        .leftcolumn img {
+            width: 100%;
+            height: 350px;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 30%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        .rightcolumn img {
+            width: 100%;
+            height: 250px;
+        }
+
+        /* Fake image */
+        /*.fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+        }*/
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .card h2 {
+            padding-bottom: 5px;
+            border-bottom: solid 1px orange;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout - 화면이 800px보다 작을 때 */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* Responsive layout - 화면이 400px보다 작을 때 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Travel to Japan</h1>
+        <p>There are so many tourist attractions in Japan. Let's go on a trip to Japan</p>
+    </div>
+
+    <div class="topnav">
+        <a href="exam14-1.html">예제 14-1</a>
+        <a href="exam14-2.html">예제 14-2</a>
+        <a href="exam14-3.html">예제 14-3</a>
+        <a href="exam14-4.html">예제 14-4</a>
+        <a href="exam14-5.html">예제 14-5</a>
+        <a href="exam14-6.html">예제 14-6</a>
+        <a href="exam14-7.html">예제 14-7</a>
+        <a href="exam14-8.html">예제 14-8</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>TOKYO</h2>
+                <h5>도쿄타워의 야경</h5>
+                <div><img src="tokyo.jpg"></div>
+                <p>도쿄로 떠나보세요</p>
+                <p>도쿄는 전통과 현대가 조화를 이루는 매력적인 도시입니다. 화려한 쇼핑 거리와 다양한 맛집, 풍부한 문화 체험이 가득합니다.
+                도쿄 타워, 아사쿠사, 시부야 등 인기 명소를 놓치지 마세요!</p>
+            </div>
+            <div class="card">
+                <h2>OSAKA</h2>
+                <h5>도톤보리의 야경</h5>
+                <div><img src="osaka.jpg"></div>
+                <p>오사카로 떠나보세요</p>
+                <p>오사카는 맛집과 웃음이 가득한 정겨운 도시입니다. 도톤보리, 유니버설 스튜디오, 오사카성과 같은 명소들이 여행의 즐거움을 더해줍니다.
+                먹거리 천국 오사카에서 타코야키와 오코노미야키를 꼭 맛보세요!</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Japan</h2>
+                <div><img src="japan.jpg"></div>
+                <p>일본은 전통과 현대가 어우러진 다채로운 매력을 지닌 나라입니다. 도쿄, 오사카, 교토 등 도시마다 색다른 문화와 풍경을 즐길 수 있습니다.
+                맛있는 음식, 친절한 사람들, 깨끗한 거리까지 여행의 만족도를 높여줍니다.</p>
+            </div>
+            <div class="card">
+                <h2>Another City</h2>
+                <div><p><a href="#">Kyoto</a></p></div>
+                <div><p><a href="#">Fukuoka</a></p></div>
+                <div><p><a href="#">Sapporo</a></p></div>
+                <div><p><a href="#">Nagoya</a></p></div>
+            </div>
+            <div class="card">
+                <h2>Exchange Rate</h2>
+                <img src="money.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><h2>COPYRIGHT(C) JB투어 All Rights Reserved.</h2></p>
+    </div>
+</body>
+</html>
